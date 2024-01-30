@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="msapplication-TileImage" content="img/icons8-qr-tiny-color/icons8-qr-64.png">
-<link rel="shortcut icon" sizes="42x42" href="img/icons8-qr-tiny-color/icons8-qr-48.png">
+<meta name="msapplication-TileImage" content="img/dop/logo-removebg-preview.png">
+<link rel="shortcut icon" sizes="42x42" href="img/dop/logo-removebg-preview.png">
 <link rel="icon" href="img/main-2/favicons/favicon.ico1">
-<link rel="icon" sizes="32x32" href="img/icons8-qr-tiny-color/icons8-qr-32.png">
-<link rel="icon" sizes="192x192" href="img/icons8-qr-tiny-color/icons8-qr-64.png">
+<link rel="icon" sizes="32x32" href="img/dop/logo-removebg-preview.png">
+<link rel="icon" sizes="192x192" href="img/dop/logo-removebg-preview.png">
 
 <title>QR-Toy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,33 @@
   href="vendors/swiper-8.4.3/swiper-bundle.min.css" 	
 />
 </head>
+<style>
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
+	.header__logo img {
+		max-width: 30%;
+		height: auto;
+	}
+
+	.header__action {
+		margin-right: 10px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		/* Пример: изменить стили для экранов с шириной до 600px */
+		.header__logo img {
+			max-width: 25%; /* Уменьшить максимальную ширину логотипа */
+		}
+
+		.header__action {
+			margin-right: 5px; /* Уменьшить отступ для кнопки "Заказать" */
+		}
+	}
+</style>
 <body>
 	<div class="section section__first">
 	<div class="section__first-header">
@@ -177,21 +203,13 @@
 
 <div class="swiper-slide slide">
 	<p class="subtitle">Шаг 4: Отправка QR-кодов клиенту</p>
-		<h3>После генерации QR-кодов отправьте их клиенту по электронной почте или через другой способ связи. Клиент может распечатать эти QR-коды на баннерах, флаерах или карточках и распространять их среди своих гостей.</h3>
+		<h3>После генерации QR-кодов отправьте их клиенту по электронной почте или через другой способ связи. Клиент может распечатать эти QR-коды на баннерах, флаерах или карточках и распространять их среди своих гостей.
+			В день свадьбы гости могут сканировать QR-код для загрузки, чтобы отправить свадебные фотографии на аккаунт, и ваши клиенты могут собирать важные моменты с помощью фотографий и делиться ими через вашу платформу.
+		</h3>
 			<div class="img-wrapper">
 				<img src="img/main-2/how-it-works/slide-mobile-3.svg" alt="Отправка приглашений">
 			</div>
-		<p class="text">Если вы&nbsp;довольны результатом, произведите оплату. Теперь можно отправлять ссылки на&nbsp;приглашения гостям.</p>
-	</div>
-</div>
-<div class="swiper-slide slide">
-	<p class="subtitle">Шаг 5: Доступ через QR-коды </p>
-		<h3>В день свадьбы гости могут сканировать QR-код для загрузки, чтобы отправить свадебные фотографии на аккаунт, и QR-код для скачивания, чтобы просматривать и скачивать фотографии. Ваши клиенты могут собирать важные моменты с помощью фотографий и делиться ими через вашу платформу.</h3>
-			<div class="img-wrapper">
-				<img src="img/main-2/how-it-works/slide-mobile-4.svg" alt="Отправка приглашений">
-			</div>
-		<p class="text">Если вы&nbsp;довольны результатом, произведите оплату. Теперь можно отправлять ссылки на&nbsp;приглашения гостям.</p>
-	</div>
+		</div>
 </div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
@@ -277,8 +295,8 @@
 				<!-- Slides -->
 				<div class="swiper-slide">
 	<div class="slide">
-		<h3>Александра, г. Краснодар</h3>
-			<p>Огромное спасибо за ваш сервис!!! Мы сэкономили целую кучу времени в вопросе приглашения гостей! Все получилось очень быстро и качественно! Обязательно порекомендуем вас своим друзьям! :) Кто раздумывает и выбирает - обязательно попробуйте этот сервис!</p>
+		<h3>Марина, г. Уральск</h3>
+		<p>Этот сайт оказался идеальным решением для нашей свадьбы. Мы могли загрузить фотографии сразу после мероприятия, и все гости смогли легко скачать их, чтобы сохранить воспоминания. Мы также оставили отзывы о нашей свадьбе, и это было здорово!</p>
 		<div class="img-wrapper">
 			<img src="img/main-2/reviews/review-mobile-0.png" alt="Александра">
 		</div>
@@ -286,10 +304,10 @@
 </div>
 <div class="swiper-slide">
 	<div class="slide">
-		<h3>Ольга, г. Москва</h3>
+		<h3>Жасмин, г. Актобе</h3>
 
-		<p>Ааа!!! Как здорово, что мы нашли такую штуку! Это действительно что-то новое и интересное! Гости, проживающие в других городах, оценили преимущества такого приглашения! Никто не задавал вопросов: «А где? А когда?», ну кроме тех, кто не просмотрел приглашение ;) Успехов вам в развитии сервиса!</p>
-
+		<p>Наша свадьба была незабываемой, и этот сайт сделал ее еще более особенной. Мы загрузили все наши фотографии сюда, и наши гости могли легко скачать их, используя QR-коды. Простой и удивительно удобный сервис!</p>
+				
 		<div class="img-wrapper">
 			<img src="img/main-2/reviews/review-mobile-1.png" alt="Ольга">
 		</div>
@@ -297,10 +315,10 @@
 </div>
 <div class="swiper-slide">
 	<div class="slide">
-		<h3>Татьяна, г. Казань</h3>
+		<h3>Алия, г. Актобе</h3>
 
-		<p>В первую очередь, хотим поблагодарить молниеносную службу поддержки! Помогаете очень быстро! Спасибо, что добавили возможность вставлять видео-обращение — это очень нужная штука ) И, соответственно, благодарим за то, что помогли разместить его нам в наше приглашение!</p>
-
+		<p>Мы благодарны этому сайту за то, что помог сохранить наши свадебные моменты. Не только это удобно для нас, но и для всех наших гостей. Фотографии, отзывы и QR-коды сделали нашу свадьбу незабываемой!</p>
+				
 		<div class="img-wrapper">
 			<img src="img/main-2/reviews/review-mobile-2.png" alt="Татьяна">
 		</div>
@@ -308,10 +326,10 @@
 </div>
 <div class="swiper-slide">
 	<div class="slide">
-		<h3>Мария, г. Москва</h3>
+		<h3>Индира, г. Актобе</h3>
 
-		<p>Ребята! Нет слов! Очень крутой сервис! Мы подключили к приглашению инстаграм, даже не пришлось загружать отдельно лов стори, ведь мы, с теперь уже мужем, давно размещали нашу историю в инстаграм с собственным хеш-тегом. Сервис нашел все наши фотографии и отобразил на сайте! Очень классно! Желаем вам успехов в развитии, вы лучшие! :)</p>
-
+		<p>Спасибо за возможность хранить и делиться нашими свадебными фотографиями. Мы были приятно удивлены простотой использования QR-кодов, и это сделало процесс еще более удобным. Мы рекомендуем этот сайт всем, кто планирует свадьбу!</p>
+				
 		<div class="img-wrapper">
 			<img src="img/main-2/reviews/review-mobile-3.png" alt="Мария">
 		</div>
@@ -347,7 +365,7 @@
 	</div>
 </div>
 <div class="swiper-slide">
-	<div class="slide slide-2"">
+	<div class="slide slide-2">
 		<div class="scheme-wrapper">
 			<div class="scheme">
 				<div class="left">
@@ -366,7 +384,7 @@
 	</div>
 </div>
 <div class="swiper-slide">
-	<div class="slide slide-3"">
+	<div class="slide slide-3">
 		<div class="scheme-wrapper">
 			<div class="scheme">
 				<div class="left">
@@ -385,7 +403,7 @@
 	</div>
 </div>
 <div class="swiper-slide">
-	<div class="slide slide-2"">
+	<div class="slide slide-2">
 		<div class="scheme-wrapper">
 			<div class="scheme">
 				<div class="left">
